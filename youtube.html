@@ -15,8 +15,9 @@
 
         }
         .thumbnail {
-            width: 300px;
-            display:block;
+            width:100%;
+            overflow:hidden;
+           
         }
         .search {
             margin-left:12px;
@@ -30,22 +31,22 @@
             line-height: 20px;
             margin-bottom:12px;
         }
-        .videopreview{
-            width: 300px;
-            display: inline-block;
-            vertical-align: top;
-            margin-right: 15px;
-
+     
+        .video-info-grid{
+            display:grid;
+            grid-template-columns: 50px 1fr;
+        
         }
         .profilepict{
-            display:inline-block;
+          
             width:50px;
             vertical-align:top;
             
         }
        .videoinfo{
-        display:inline-block;
-        width:200px;
+      
+        width:
+        200px;
        }
        .picture{
         width: 40px;
@@ -62,6 +63,12 @@
        .Name{
         margin-bottom:4px;
        }
+       .vidgrid{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap:15px;
+        row-gap:40px:
+       }
       
     </style>
 
@@ -72,14 +79,12 @@
 
 
     <input class="search" type="text" placeholder="Search">
-  
-
-    <div class="videopreview">
+  <div class="vidgrid"> <div class="videopreview">
     <div class = 'thumbnail-row'>
          <img class = "thumbnail" src="thumbnails/OIP (5).webp">
     </div>
 
-    <div>
+    <div class="video-info-grid">
         <div class="profilepict">
             <img class="picture" src="thumbnails\profilepics\channels4_profile (3).jpg"> </img>
         </div>
@@ -100,7 +105,7 @@
         <div class = 'thumbnail-row'>  
             <img class = "thumbnail" src="thumbnails\OIP (4).webp">
         </div>
-        <div>
+        <div class="video-info-grid">
             <div class="profilepict">
             <img  class="picture" src="thumbnails\profilepics\channels4_profile (1).jpg"> </img>
         </div>
@@ -122,7 +127,7 @@
         <div class = 'thumbnail-row'>  
             <img class = "thumbnail" src="thumbnails\OIP (3).webp">
         </div>
-        <div>
+        <div class="video-info-grid">
              
         <div class="profilepict">
             <img class="picture" src="thumbnails\profilepics\channels4_profile (2).jpg"> </img>
@@ -152,7 +157,7 @@
         <div class = 'thumbnail-row'>
              <img class = "thumbnail" src="thumbnails\OIP (2).webp">
         </div>
-        <div>
+        <div class="video-info-grid">
 
         <div class="profilepict">
            <img class="picture" src="thumbnails\profilepics\channels4_profile (4).jpg"> </img>
@@ -177,7 +182,7 @@
         <div class = 'thumbnail-row'>
             <img class = "thumbnail" src="thumbnails\OIP (1).webp">
         </div>
-        <div>
+        <div class="video-info-grid">
 
         <div class="profilepict">
             <img class="picture" src="thumbnails\profilepics\channels4_profile.jpg"> </img>
@@ -202,7 +207,7 @@
      <div class="videopreview">
         <div class = 'thumbnail-row'>  <img class = "thumbnail" src="thumbnails\th.jpg">
         </div>
-        <div>
+        <div class="video-info-grid">
 
 
 
@@ -221,6 +226,8 @@
  
 
    
-    </div>
+    </div></div>
+
+   
 </body>
 </html>
