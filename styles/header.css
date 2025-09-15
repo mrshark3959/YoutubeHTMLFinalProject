@@ -1,5 +1,28 @@
-.search {
-            margin-left:12px;
-            font-size: 20px;
-            display:block;
-        }
+.header{
+    height: 55px;
+    display:flex;
+    flex-direction: row;
+
+}
+
+.leftsection {
+    background-color: orange;
+    width: 150px;
+  
+
+}
+
+.midsection {
+    background-color:blue;
+    flex: 1;
+    margin-left: 70px;
+    margin-right:35px;
+    max-width: 300px;
+}
+
+
+.rightsection {
+    background-color: brown;
+    width: 200px;
+
+}
