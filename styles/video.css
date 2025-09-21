@@ -2,7 +2,8 @@
         .thumbnail {
             width:100%;
             overflow:hidden;
-           
+            display:block;
+            height: 180px;
         }
         
         .title{
